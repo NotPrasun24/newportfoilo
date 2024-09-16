@@ -1,0 +1,81 @@
+
+.sidebar {
+    left: 0; 
+    transition: left 0.5s ease; 
+}
+
+/* Hide the sidebar when 'closed' class is added */
+.sidebar.closed {
+    left: -18.75rem; /* Hide the sidebar off-screen */
+}
+
+/* Toggle Button Styles for Mobile */
+.sidebar-toggle {
+    display: block; /* Ensure the button is visible on mobile */
+    position: fixed;
+    top: 10px;
+    left: 0px; /* Align the button to the top-right */
+    font-size: 24px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it’s above other content */
+}
+
+
+/* Hide Sidebar Toggle Button on Desktop */
+@media (min-width: 769px) {
+    .sidebar-toggle {
+        display: none; /* HI: Hide the toggle button on larger screens */
+    }
+
+
+  
+}
+
+@media (max-width: 768px) {
+    .sidebar h2 {
+        padding-top: 12px; 
+        /* padding-right: 120px; */
+    
+        padding-bottom: 10px; /* Optionally adjust bottom padding as well */
+    }
+
+
+    #prasun{
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+
+
+  
+}
+
+/* 
+.construction {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .construction {
+        display: flex;
+        flex-direction: row;
+        font-size: 24px;
+        text-align: center;
+        padding-right: 350px;
+        padding-bottom: 250px;
+        color: red; 
+        z-index: 9000;
+    }
+}
+.hi{
+    display: none;
+}
+.bento-box{
+    display: none;
+} 
+
+
+ */
